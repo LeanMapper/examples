@@ -1,0 +1,35 @@
+getTable()
+==========
+
+Model\Entity\ClientCompany => client_company
+
+-----
+
+getEntityClass()
+================
+
+client_company => Model\Entity\ClientCompany
+
+-----
+
+getColumn()
+===========
+
+companyName => company_name
+
+-----
+
+getEntityField()
+================
+
+company_name => companyName
+
+-----
+
+getTableByRepositoryClass()
+===========================
+
+Model\ClientCompanyRepository => client_company
+
+-----
+

@@ -14,8 +14,8 @@ V souboru `Mapper.php` si připravíme statické metody `toUnderScore` a `toCame
 * `getTableByRepositoryClass()` - převádí název repositáře na název tabulky
 
 
-## Rozšíření
+--------
 
-Pokud si nechcete psát vlastní mapper, můžete využít předpřipravené balíčky vytvořené komunitou:
+Pokud si nechcete psát vlastní mapper, můžete vyzkoušet předpřipravené balíčky vytvořené komunitou:
 
 * [inlm/mappers](https://github.com/inlm/mappers)

@@ -1,0 +1,2 @@
+Addon\News\Entity\Comment => news_comment
+news_comment => Addon\News\Entity\Comment

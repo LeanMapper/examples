@@ -1,0 +1,5 @@
+{
+    "require": {
+        "tharos/leanmapper": "^3.1"
+    }
+}

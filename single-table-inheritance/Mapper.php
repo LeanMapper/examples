@@ -21,6 +21,6 @@ class Mapper extends BaseMapper
 		if ($entity === 'ClientIndividual' || $entity === 'ClientCompany') {
 			return 'client';
 		}
-		return parent::getTable();
+		return parent::getTable($entity);
 	}
 }

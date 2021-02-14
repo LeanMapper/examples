@@ -2,32 +2,32 @@
 
 class Mapper extends \LeanMapper\DefaultMapper
 {
-	public function getTable($entityClass)
+	public function getTable(string $entityClass): string
 	{
 		return self::toUnderScore($this->trimNamespace($entityClass));
 	}
 
 
-	public function getEntityClass($table, LeanMapper\Row $row = NULL)
+	public function getEntityClass(string $table, LeanMapper\Row $row = null): string
 	{
 		return ($this->defaultEntityNamespace !== NULL ? $this->defaultEntityNamespace . '\\' : '')
 			. ucfirst(self::toCamelCase($table)); // Název třídy začíná velkým písmenem
 	}
 
 
-	public function getColumn($entityClass, $field)
+	public function getColumn(string $entityClass, string $field): string
 	{
 		return self::toUnderScore($field);
 	}
 
 
-	public function getEntityField($table, $column)
+	public function getEntityField(string $table, string $column): string
 	{
 		return self::toCamelCase($column);
 	}
 
 
-	public function getTableByRepositoryClass($repositoryClass)
+	public function getTableByRepositoryClass(string $repositoryClass): string
 	{
 		$matches = array();
 		if (preg_match('#([a-z0-9]+)repository$#i', $repositoryClass, $matches)) {
@@ -37,7 +37,7 @@ class Mapper extends \LeanMapper\DefaultMapper
 	}
 
 
-	public static function toUnderScore($str)
+	public static function toUnderScore(string $str): string
 	{
 		return lcfirst(preg_replace_callback('#(?<=.)([A-Z])#', function ($m) {
 			return '_' . strtolower($m[1]);
@@ -45,7 +45,7 @@ class Mapper extends \LeanMapper\DefaultMapper
 	}
 
 
-	public static function toCamelCase($str)
+	public static function toCamelCase(string $str): string
 	{
 		return preg_replace_callback('#_(.)#', function ($m) {
 			return strtoupper($m[1]);

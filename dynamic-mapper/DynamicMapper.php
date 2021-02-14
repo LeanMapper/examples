@@ -14,7 +14,7 @@ class DynamicMapper extends \LeanMapper\DefaultMapper
 	}
 
 
-	public function getTable($entityClass)
+	public function getTable(string $entityClass): string
 	{
 		foreach ($this->dictionary as $table => $entity) {
 			if ($entityClass === $entity) {
@@ -25,7 +25,7 @@ class DynamicMapper extends \LeanMapper\DefaultMapper
 	}
 
 
-	public function getEntityClass($table, LeanMapper\Row $row = null)
+	public function getEntityClass(string $table, LeanMapper\Row $row = null): string
 	{
 		if (isset($this->dictionary[$table])) {
 			return $this->dictionary[$table];

@@ -1,26 +1,24 @@
 ClientIndividual
-/home/honza/Dokumenty/Projekty/leanmapper/examples/single-table-inheritance/index.php:33:
 array(4) {
-  'id' =>
+  ["id"]=>
   int(1)
-  'type' =>
+  ["type"]=>
   string(10) "individual"
-  'name' =>
+  ["name"]=>
   string(8) "John Doe"
-  'birthdate' =>
+  ["birthdate"]=>
   string(10) "1970-01-01"
 }
 ClientCompany
-/home/honza/Dokumenty/Projekty/leanmapper/examples/single-table-inheritance/index.php:37:
 array(5) {
-  'id' =>
+  ["id"]=>
   int(2)
-  'type' =>
+  ["type"]=>
   string(7) "company"
-  'name' =>
+  ["name"]=>
   string(9) "Seznam.cz"
-  'ic' =>
+  ["ic"]=>
   string(8) "26168685"
-  'dic' =>
+  ["dic"]=>
   string(10) "CZ26168685"
 }

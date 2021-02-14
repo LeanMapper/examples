@@ -1,6 +1,6 @@
 {
     "require": {
-        "tharos/leanmapper": "^3.2",
+        "tharos/leanmapper": "^4.0",
         "nextras/migrations": "^3.1"
     }
 }
